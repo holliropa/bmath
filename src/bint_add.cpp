@@ -1,7 +1,7 @@
-#include "bw/bmt/bint.hpp"
+#include "bw/bmath/bint.hpp"
 #include "internal/bint_internal.hpp"
 
-namespace bw::bmt {
+namespace bw::bmath {
     void add(bint &sum, const bint &addend1, const bint &addend2) {
         if (addend1.sign == addend2.sign) {
             //// If both numbers have the same sign:

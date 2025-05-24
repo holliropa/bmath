@@ -1,9 +1,9 @@
 #include <stdexcept>
 #include <algorithm>
-#include "bw/bmt/bint.hpp"
+#include "bw/bmath/bint.hpp"
 #include "internal/bint_internal.hpp"
 
-namespace bw::bmt {
+namespace bw::bmath {
     std::string to_string(const bint &number, uint8_t base) {
         if (base < 2 || base > 64)
             throw std::invalid_argument("Base must be in the range [2, 64]");

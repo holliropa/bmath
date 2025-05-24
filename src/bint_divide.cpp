@@ -1,8 +1,8 @@
 #include <stdexcept>
-#include "bw/bmt/bint.hpp"
+#include "bw/bmath/bint.hpp"
 #include "internal/bint_internal.hpp"
 
-namespace bw::bmt {
+namespace bw::bmath {
     void divide(bint &quotient, const bint &dividend, const bint &divisor, bint &remainder) {
         if (internal::limbs_is_zero(divisor.limbs))
             throw std::invalid_argument("Division by zero");

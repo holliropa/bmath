@@ -3,7 +3,7 @@
 #include <string>
 #include "bint_type.hpp"
 
-namespace bw::bmt {
+namespace bw::bmath {
     void set_ui(bint &number, uint32_t value);
 
     void set_si(bint &number, int32_t value);

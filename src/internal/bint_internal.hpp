@@ -1,8 +1,8 @@
 #pragma once
 
-#include "bw/bmt/bint.hpp"
+#include "bw/bmath/bint.hpp"
 
-namespace bw::bmt::internal {
+namespace bw::bmath::internal {
     void limbs_add(container_t &sum, const container_t &addend1, const container_t &addend2);
 
     void limbs_subtract(container_t &difference, const container_t &minuend, const container_t &subtrahend);

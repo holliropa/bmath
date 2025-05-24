@@ -1,6 +1,6 @@
-#include "bw/bmt/bint.hpp"
+#include "bw/bmath/bint.hpp"
 
-namespace bw::bmt {
+namespace bw::bmath {
     void negate(bint &number) {
         number.sign = !number.sign;
     }

@@ -1,6 +1,6 @@
 #include "bint_internal.hpp"
 
-namespace bw::bmt::internal {
+namespace bw::bmath::internal {
     void limbs_add(container_t &sum, const container_t &addend1, const container_t &addend2) {
         auto isLeftLarger = addend1.size() > addend2.size();
         auto &largerLimbs = isLeftLarger ? addend1 : addend2;

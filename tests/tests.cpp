@@ -1,9 +1,9 @@
 #include <iostream>
 #include <fstream>
 #include <chrono>
-#include "bw/bmt/bint.hpp"
+#include "bw/bmath/bint.hpp"
 
-using namespace bw::bmt;
+using namespace bw::bmath;
 
 //// Helper function to run a test and print the result
 void runTest(const std::string &testName, bool (*testFunc)()) {

@@ -1,6 +1,6 @@
-#include "bw/bmt/bint.hpp"
+#include "bw/bmath/bint.hpp"
 
-namespace bw::bmt {
+namespace bw::bmath {
     void set_ui(bint &number, uint32_t value) {
         number.limbs = container_t(1, static_cast<limb_t>(value));
     }

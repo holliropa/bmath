@@ -1,7 +1,7 @@
-#include "bw/bmt/bint/bint_functions.hpp"
+#include "bw/bmath/bint/bint_functions.hpp"
 #include "internal/bint_internal.hpp"
 
-namespace bw::bmt {
+namespace bw::bmath {
     int compare(const bint &left, const bint &right) {
         if (left.sign != right.sign) {
             return left.sign ? -1 : 1;

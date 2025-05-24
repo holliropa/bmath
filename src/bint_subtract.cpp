@@ -1,7 +1,7 @@
-#include "bw/bmt/bint.hpp"
+#include "bw/bmath/bint.hpp"
 #include "internal/bint_internal.hpp"
 
-namespace bw::bmt {
+namespace bw::bmath {
     void subtract(bint &difference, const bint &minuend, const bint &subtrahend) {
         bint result;
         auto isMinuendBigger = (internal::limbs_compare(minuend.limbs, subtrahend.limbs) >= 0);

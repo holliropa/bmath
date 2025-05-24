@@ -2,7 +2,7 @@
 
 #include "common.hpp"
 
-namespace bw::bmt {
+namespace bw::bmath {
     struct bint {
         static const bint zero;
         static const bint one;

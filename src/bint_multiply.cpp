@@ -1,7 +1,7 @@
-#include "bw/bmt/bint.hpp"
+#include "bw/bmath/bint.hpp"
 #include "internal/bint_internal.hpp"
 
-namespace bw::bmt {
+namespace bw::bmath {
     void multiply(bint &product, const bint &multiplicand, const bint &multiplier) {
         if (internal::limbs_is_zero(multiplicand.limbs) || internal::limbs_is_zero(multiplier.limbs)) {
             product = bint::zero;
