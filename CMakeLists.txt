@@ -8,16 +8,16 @@ set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 # Include directories
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-file(GLOB BIGINT_SOURCES
+file(GLOB BINT_SOURCES
         ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/internal/*.cpp
 )
 
-SET(LIBRARY_NAME bmt)
-SET(LIBRARY_ALIAS bw::bmt)
+SET(LIBRARY_NAME bmath)
+SET(LIBRARY_ALIAS bw::bmath)
 
 # Library target
-add_library(${LIBRARY_NAME} ${BIGINT_SOURCES})
+add_library(${LIBRARY_NAME} ${BINT_SOURCES})
 add_library(${LIBRARY_ALIAS} ALIAS ${LIBRARY_NAME})
 
 # Include directories

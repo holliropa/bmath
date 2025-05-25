@@ -7,12 +7,12 @@ set(CMAKE_EXE_LINKER_FLAGS "-static")
 add_executable(${PROJECT_NAME} tests.cpp)
 
 # Ensure the test depends on the library
-add_dependencies(${PROJECT_NAME} bw::bmt)
+add_dependencies(${PROJECT_NAME} bw::bmath)
 
 # Link the library to the test executable
 target_link_libraries(${PROJECT_NAME}
         PRIVATE
-        bw::bmt
+        bw::bmath
 )
 
 # Add the test to CTest
